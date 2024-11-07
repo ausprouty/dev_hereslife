@@ -1,0 +1,62 @@
+#download-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Reduced gap for less space between rows */
+}
+
+#download-form input[type="text"],
+#download-form input[type="email"],
+#download-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#download-form .checkbox-group {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+#download-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#download-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#download-form button {
+    padding: 10px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#download-form button:hover {
+    background-color: #005177;
+}
+
+label {
+    margin-top:15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Optional: Adds space between the label and the select */
+}
+
+select {
+    display: block; /* Ensures it is below the label */
+}
+
+input[readonly] {
+    background-color: #e9ecef;  /* Light grey background for distinction */
+    border: 1px solid #ced4da;  /* Keep consistent styling */
+    padding: 5px;
+    width: 200px;
+    font-weight: bold;
+    color: #495057;
+}

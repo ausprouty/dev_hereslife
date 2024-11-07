@@ -1,0 +1,103 @@
+:root {
+    --color-primary: #3f5864;
+    --color-secondary: #009da5;
+    --color-accent: #65c058;
+    --color-highlight: #ffc700;
+    --color-warning: #f38b3c;
+    --color-form-background: #f38b3c;
+    --color-background: #f4f4f4;
+    --color-text: #3f5864;
+    --color-error: #ff0000;
+    --color-link: #3c6e89;
+    --color-hover-link: #007b8a;
+    --color-button-bg: #3f5864;
+  }
+  
+  /* Main form container */
+  .rcd-form {
+    position: relative;
+    padding: 20px;
+    background-color: var(--color-form-background);  /* Background color set to warning as per your request */
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 10px;
+    color: var(--color-text);  /* Ensure text visibility on the warning background */
+  }
+  
+  /* Input, select, and textarea fields */
+  .rcd-input, .rcd-select, .rcd-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--color-text);
+    background-color: var(--color-background);  /* Background for input fields */
+  }
+  
+  /* Checkbox styling */
+  .rcd-checkbox {
+    margin-right: 8px;
+    transform: scale(1.5);  /* Increase the size of the checkbox */
+  }
+  
+ /* Labels for inputs and checkboxes */
+form .rcd-label {
+  font-size: 14pt !important;  /* Force the size */
+  color: var(--color-text);
+  font-family: inherit;  /* Ensure it inherits the correct font family if needed */
+  display: inline-block;  /* Ensure it behaves as a label */
+  margin-bottom: 5px;  /* Optional: adds some spacing below the label */
+}
+  
+  /* Main buttons */
+  .rcd-button {
+    padding: 10px 20px;
+    background-color: var(--color-button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .rcd-button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  /* Close button (styled as "X") */
+.rcd-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-link);  /* Close button color */
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;  /* Ensure the button stays on top */
+  }
+  
+  .rcd-close:hover {
+    color: var(--color-secondary);  /* Change close button color on hover */
+  }
+  
+  
+  /* Hidden elements (like state field initially) */
+  .rcd-hidden {
+    display: none;
+  }
+  
+  /* Styling checkbox group */
+  .checkbox-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Textarea specific styling */
+  textarea.rcd-textarea {
+    height: 100px;
+  }
+  
